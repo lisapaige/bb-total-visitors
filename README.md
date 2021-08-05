@@ -164,7 +164,9 @@ We did our best to let the data we have speak to us, and we think the best idea 
 
 Without more historical data, it is hard to use these results meaningfully, we are hoping to build something just as fun and much more helpful in the future, either with more historical data or new data that we start collecting now.
 
-Please [click](https://bogus-basin-app-snow.herokuapp.com/) to play with an application that demonstrates making predictions using the random forest model and choosing only a **snow condition** value. 
+Please [click](https://bogus-basin-prediction.herokuapp.com/) to play with an application that demonstrates making predictions using the random forest model and choosing only a **snow condition** value. 
+
+![](imgages/bb-gif.gif)
 
 Please [click](https://bogus-basin-app.herokuapp.com/) to play with an application that demonstrates making predictions using the random forest model and choosing both a **snow condition** value and a **total revenue** value. 
 
@@ -179,7 +181,7 @@ Please [click](https://bogus-basin-app.herokuapp.com/) to play with an applicati
 - Week-ahead prediction model for daily visitor counts
 - General application for predicting demand
 
-### With more data
+### With additional data
 
 - Image Recognition 
 - GPS data 
