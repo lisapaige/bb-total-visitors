@@ -3,6 +3,8 @@ from flask import Flask, render_template, request
 import pickle
 import os
 
+# app for snow depth and net sales predictors
+
 app = Flask(__name__)
 gb = pickle.load(open('model_gb.pkl', 'rb'))
 rf = pickle.load(open('model_rf.pkl', 'rb'))
