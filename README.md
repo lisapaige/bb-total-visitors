@@ -166,7 +166,7 @@ Without more historical data, it is hard to use these results meaningfully, we a
 
 Please [click](https://bogus-basin-prediction.herokuapp.com/) to play with an application that demonstrates making predictions using the random forest model and choosing only a **snow condition** value. 
 
-![](imgages/bb-gif.gif)
+![](images/bb-gif.gif)
 
 Please [click](https://bogus-basin-app.herokuapp.com/) to play with an application that demonstrates making predictions using the random forest model and choosing both a **snow condition** value and a **total revenue** value. 
 
