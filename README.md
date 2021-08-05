@@ -140,9 +140,19 @@ WARNING:
 
 <img align="center" src="images/results.png" alt="drawing" width="800"/>
 
+<br>
+<br>
+<br>
+
+**BOOSTING MODEL**
+
 The boosting model high bias for the original data is alleviated slightly by using XGBoost, but there isn't enough data to allow the boosting models to use their strengths, one Decision Tree gives the same results. 
 
+**LINEAR MODEL**
+
 The linear model is too flexible, indicating that there are **snow conditions** and **revenue values** represented in the data that bring a negative number of visitors to Bogus Basin.
+
+**BAGGING MODEL**
 
 The random forest model is the best performer given this data. The random forest model is producing reasonable results and being responsive to the new data point.
 
@@ -150,11 +160,23 @@ Hyperparameter tuning: we don't have a validation or holdout set, so this tuning
 
 <img align="center" src="images/n_est.png" alt="drawing" width="400"/>
 
-The feature importance and permutation importances indicate that the **snow condition** is being used most often and most fruitfully in the random forest regression. There is some evidence that a model with only **snow condition** is preferable. We note that these importance results are not robust in the context of only 4 datapoints.
+The feature importance and permutation importances indicate that the **snow condition** is being used most often and most fruitfully in the random forest regression. There is weak evidence for a null model being sufficient. We note that these importance results are not robust in the context of only 4 datapoints.
 
+Feature Importance for 2 and 3 predictor random forest models
 
+![](images/feat_imp2.png)
+![](images/feat_imp3.png)
 
-Models are only as good as the data we feed them, and we are starving our poor models. In light of this we also made a Jelly Bean Model. The Jelly Bean Model comes from the idea that guessing the number of jelly beans in a jar is best accomplished by collecting a bunch of wrong guesses and averaging them.  We built multiple models to try to answer this question, so we can also look at jelly bean results.
+<br>
+
+Permutation Importance for 2 and 3 predictor random forest models
+
+![](images/perm_imp2.png)
+![](images/perm_imp3.png)
+
+**JELLYBEAN MODEL**
+
+Models are only as good as the data we feed them, and we are starving our poor models. In light of this we also made a Jelly Bean Model. The Jelly Bean Model comes from the idea that guessing the number of jelly beans in a jar is best accomplished by collecting a bunch of wrong guesses and averaging them [(The Wisdom of Crowds).](https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds) We built multiple models to try to answer this question, so (just for fun) we can also look at jelly bean results.
 
 ## Conclusion
 
@@ -164,7 +186,7 @@ We did our best to let the data we have speak to us, and we think the best idea 
 
 Without more historical data, it is hard to use these results meaningfully, we are hoping to build something just as fun and much more helpful in the future, either with more historical data or new data that we start collecting now.
 
-Please [click](https://bogus-basin-prediction.herokuapp.com/) to play with an application that demonstrates making predictions using the random forest model and choosing only a **snow condition** value. 
+Please [click](https://bogus-basin-prediction.herokuapp.com/) to play with an application that demonstrates making predictions using the jellybean model and choosing only a **snow condition** value. 
 
 ![](images/bb-gif.gif)
 
